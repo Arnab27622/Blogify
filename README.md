@@ -41,7 +41,7 @@ Make sure you have the following installed on your machine:
    npm install
 3. Create a .env file in the root directory and configure the following environment variables:
    ```
-   MONGO_URI=your_mongodb_connection_string
+   MONGO_URL=your_mongodb_connection_string
    JWT_SECRET=your_secret_key_for_jwt
    PORT=5000
 4. Start the application:
