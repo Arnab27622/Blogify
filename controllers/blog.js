@@ -19,7 +19,7 @@ async function createNewBlog(req, res) {
         author: req.user._id
     });
 
-    res.redirect(`/blogs/${blog._id}`);
+    res.redirect(`/blog/${blog._id}`);
 };
 
 async function getBlogPageById(req, res) {

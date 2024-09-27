@@ -1,5 +1,6 @@
+require('dotenv').config();
+
 const jwt = require('jsonwebtoken');
-const secret = 'Arnab@12#3';
 
 function createTokenForUser(user) {
     const payload = {
@@ -8,12 +9,12 @@ function createTokenForUser(user) {
         profileImageURL: user.profileImageURL,
         role: user.role,
     };
-    return jwt.sign(payload, secret);
+    return jwt.sign(payload, process.env.JWT_SECRET);
 }
 
 function verifyToken(token) {
     return new Promise((resolve, reject) => {
-        jwt.verify(token, secret, (err, decoded) => {
+        jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
             if (err) {
                 return reject(err);
             }
