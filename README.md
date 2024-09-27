@@ -54,7 +54,6 @@ Make sure you have the following installed on your machine:
    │   ├── blog.js          # Blog schema and model
    │   └── comment.js       # Comment schema and model
    ├── routes
-   │   ├── auth.js          # Authentication routes (signup, login, logout)
    │   ├── blog.js          # Blog-related routes
    │   └── user.js          # User-related routes
    ├── controllers
@@ -66,8 +65,8 @@ Make sure you have the following installed on your machine:
    │   └── uploads          # Folder for storing uploaded blog images
    ├── service
    │   ├── auth.js          # Logic for JWT token creation and verification
-   ├── views
-   │   └── ejs templates    # EJS views for rendering HTML
+   ├── views                # EJS views for rendering HTML
+   │   └── partials         
    ├── app.js               # Main entry point for the application
    ├── connection.js        # Handles MongoDB connection
    └── package.json         # Dependency management
