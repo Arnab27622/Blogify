@@ -1,7 +1,7 @@
 # Blogify
 
 ## Author
-  Arnab Dey
+- **Arnab Dey**
 #
 A full-featured blogging application built with Node.js, where users can create blogs, upload photos, comment on blogs, and manage their accounts. Authentication is handled via JWT tokens, and MongoDB is used to store all the data.
 
@@ -72,6 +72,6 @@ Make sure you have the following installed on your machine:
    └── package.json         # Dependency management
 
 ## Future Enhancements
-  Pagination: Adding pagination to blog listing for better performance with large datasets.<br>
-  User Profiles: Enabling users to edit their profiles and view other user profiles.<br>
-  Likes System: Implementing a "like" feature for blog posts.
+- **Pagination**: Adding pagination to blog listing for better performance with large datasets.<br>
+- **User Profiles**: Enabling users to edit their profiles and view other user profiles.<br>
+- **Likes System**: Implementing a "like" feature for blog posts.
