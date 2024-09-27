@@ -1,5 +1,8 @@
 # Blogify
 
+## Author
+  Arnab Dey
+#
 A full-featured blogging application built with Node.js, where users can create blogs, upload photos, comment on blogs, and manage their accounts. Authentication is handled via JWT tokens, and MongoDB is used to store all the data.
 
 ## Features
@@ -19,7 +22,7 @@ A full-featured blogging application built with Node.js, where users can create 
 - **JWT (JSON Web Tokens)**: For authentication and protecting routes.
 - **Multer**: Middleware for handling file uploads (used for uploading blog images).
 - **bcrypt.js**: For password hashing.
-- **EJS**: For rendering dynamic HTML on the server-side.
+- **EJS**: For rendering dynamic HTML on the server side.
 
 ## Prerequisites
 
@@ -32,5 +35,44 @@ Make sure you have the following installed on your machine:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Arnab27622/blogging-app.git
-   cd blogging-app
+   git clone https://github.com/Arnab27622/Blogify.git
+2. Install dependencies:
+   ```bash
+   npm install
+3. Create a .env file in the root directory and configure the following environment variables:
+   ```
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_secret_key_for_jwt
+   PORT=5000
+4. Start the application:
+   ```bash
+   npm start
+5. Project Structure
+   ```
+   ├── models
+   │   ├── user.js          # User schema and model
+   │   ├── blog.js          # Blog schema and model
+   │   └── comment.js       # Comment schema and model
+   ├── routes
+   │   ├── auth.js          # Authentication routes (signup, login, logout)
+   │   ├── blog.js          # Blog-related routes
+   │   └── user.js          # User-related routes
+   ├── controllers
+   │   ├── blog.js          # Logic for blog handling
+   │   └── user.js          # Logic for user handling
+   ├── middleware
+   │   └── auth.js          # Logic for Authorization Checking
+   ├── public
+   │   └── uploads          # Folder for storing uploaded blog images
+   ├── service
+   │   ├── auth.js          # Logic for JWT token creation and verification
+   ├── views
+   │   └── ejs templates    # EJS views for rendering HTML
+   ├── app.js               # Main entry point for the application
+   ├── connection.js        # Handles MongoDB connection
+   └── package.json         # Dependency management
+
+## Future Enhancements
+  Pagination: Adding pagination to blog listing for better performance with large datasets.<br>
+  User Profiles: Enabling users to edit their profiles and view other user profiles.<br>
+  Likes System: Implementing a "like" feature for blog posts.
