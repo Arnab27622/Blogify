@@ -21,7 +21,7 @@ A full-featured blogging application built with Node.js, where users can create 
 - **Mongoose**: ODM for MongoDB, used to simplify interactions with the database.
 - **JWT (JSON Web Tokens)**: For authentication and protecting routes.
 - **Multer**: Middleware for handling file uploads (used for uploading blog images).
-- **bcrypt.js**: For password hashing.
+- **crypto**: For password hashing.
 - **EJS**: For rendering dynamic HTML on the server side.
 
 ## Prerequisites
