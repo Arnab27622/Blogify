@@ -36,6 +36,7 @@ Make sure you have the following installed on your machine:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Arnab27622/Blogify.git
+   cd Blogify
 2. Install dependencies:
    ```bash
    npm install
